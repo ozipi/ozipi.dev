@@ -1,14 +1,11 @@
 import Link from "next/link";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 function Index() {
   return (
     <main>
-      <Header />
       <section>
-        <Link href="/about">
-          <a>Go to About Me</a>
-        </Link>
+        OZIPI
       </section>
     </main>
   );

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 class AboutPage extends Component {
   static getInitialProps() {
@@ -11,14 +11,13 @@ class AboutPage extends Component {
   render() {
     return (
       <main>
-        <Header />
         <section>
           <p>
             This is another page of the SSR example, you accessed it{" "}
             <strong>{this.props.isServer ? "server" : "client"} side</strong>.
           </p>
           <p>
-            You can reload to see how the page change.
+            You can reload to see how the page change. Ozipi
           </p>
           <Link href="/">
             <a>Go to Home</a>
