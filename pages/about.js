@@ -12,8 +12,7 @@ class AboutPage extends Component {
     return (
       <main>
         <section>
-          
-          <p>
+         {/* <p>
             This is another page of the SSR example, you accessed it{" "}
             <strong>{this.props.isServer ? "server" : "client"} side</strong>.
           </p>
@@ -22,7 +21,8 @@ class AboutPage extends Component {
           </p>
           <Link href="/">
             <a>Go to Home</a>
-          </Link>
+          </Link>  */}
+          O'z
         </section>
       </main>
     );

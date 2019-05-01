@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
+import ReactGA from 'react-ga';
 
 import { AppGlobalStyles } from './AppGlobalStyles'
 
@@ -27,17 +28,27 @@ const Inner = styled.div`
 `;
 
 class Page extends Component {
-  render() {
-    return (
-        <ThemeProvider theme={theme}>
-            <StyledPage>
-                <AppGlobalStyles />  
-                <Meta />
-                <Header />
-                <Inner>{this.props.children}</Inner>
-            </StyledPage>
-        </ThemeProvider>
-    );
+	constructor(props) {
+		super(props)
+		console.log('suerp::props', props)
+		this.initializeReactGA()
+	}
+	initializeReactGA() {
+		ReactGA.initialize('UA-8550666-8');
+		ReactGA.pageview('/homepage');
+	}
+
+	render() {
+		return (
+		<ThemeProvider theme={theme}>
+			<StyledPage>
+				<AppGlobalStyles />
+				<Meta />
+				<Header />
+				<Inner>{this.props.children}</Inner>
+			</StyledPage>
+		</ThemeProvider>
+	);
   }
 }
 

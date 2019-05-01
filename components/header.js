@@ -7,9 +7,6 @@ function Header() {
     <header>
 
       <Links/>
-      <Link href="/about">
-          <a>Go to About Me</a>
-      </Link>
     </header>
     
   );
