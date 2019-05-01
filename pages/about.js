@@ -12,7 +12,6 @@ class AboutPage extends Component {
     return (
       <main>
         <section>
-          <a href='https://www.linkedin.com/in/ozipi'>ln</a>
           
           <p>
             This is another page of the SSR example, you accessed it{" "}
