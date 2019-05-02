@@ -22,9 +22,8 @@ const StyledPage = styled.div`
 `;
 
 const Inner = styled.div`
-  max-width: ${props => props.theme.maxWidth};
+  
   margin: 0 auto;
-  padding: 2rem;
 `;
 
 class Page extends Component {
@@ -33,6 +32,7 @@ class Page extends Component {
 		console.log('suerp::props', props)
 		this.initializeReactGA()
 	}
+
 	initializeReactGA() {
 		ReactGA.initialize('UA-8550666-8');
 		ReactGA.pageview('/homepage');
@@ -44,7 +44,7 @@ class Page extends Component {
 			<StyledPage>
 				<AppGlobalStyles />
 				<Meta />
-				<Header />
+				{/* <Header /> */}
 				<Inner>{this.props.children}</Inner>
 			</StyledPage>
 		</ThemeProvider>
