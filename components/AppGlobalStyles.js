@@ -4,6 +4,7 @@ export const AppGlobalStyles = createGlobalStyle`
 html {
   box-sizing: border-box;
   font-size: 10px;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -14,7 +15,10 @@ body {
   font-size: 3rem;
   line-height: 2;
   font-family: 'dm';
-  
+  height: 100%;
+}
+#__next{
+  height: 100%;
 }
 a {
   text-decoration: none;

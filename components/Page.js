@@ -17,19 +17,21 @@ const theme = {
 };
 
 const StyledPage = styled.div`
+	height: 100%;
   background: white;
   color: ${props => props.theme.black};
 `;
 
 const Inner = styled.div`
-  
   margin: 0 auto;
+	max-width: ${props => props.theme.maxWidth};
+	height: 100%;
 `;
 
 class Page extends Component {
 	constructor(props) {
 		super(props)
-		console.log('suerp::props', props)
+		//console.log('suerp::props', props)
 		this.initializeReactGA()
 	}
 
@@ -40,7 +42,7 @@ class Page extends Component {
 
 	render() {
 		return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider theme={theme}> 
 			<StyledPage>
 				<AppGlobalStyles />
 				<Meta />

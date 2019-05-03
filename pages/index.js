@@ -1,13 +1,23 @@
-import Link from "next/link";
-import Header from "../components/Header";
+import styled from 'styled-components'
+import ContactLinks from '../components/Links';
+
+const CenterPage = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
 
 function Index() {
   return (
-    <main>
-      <section>
-        OZIPI
-      </section>
-    </main>
+        <CenterPage>
+            <div>
+              <h1>OZIPI</h1>
+            </div>
+            <ContactLinks/>
+        </CenterPage>
   );
 }
 
