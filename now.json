@@ -1,1 +1,8 @@
-{"version":2,"name":"ozipi.dev","builds":[{"src":"package.json","use":"@now/next"}]}
+{
+    "version":2,
+    "name":"ozipi.dev",
+    "alias": "ozipi.dev",
+    "builds":[
+        {"src":"package.json","use":"@now/next"}
+    ]
+}

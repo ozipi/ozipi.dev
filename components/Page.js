@@ -37,7 +37,6 @@ class Page extends Component {
 
 	initializeReactGA() {
 		ReactGA.initialize('UA-8550666-8');
-		ReactGA.pageview('/homepage');
 	}
 
 	render() {
