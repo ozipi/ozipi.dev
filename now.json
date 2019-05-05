@@ -1,7 +1,7 @@
 {
     "version":2,
     "name":"ozipi.dev",
-    "alias": "ozipi.dev",
+    "alias": ["ozipi.dev", "ozipi.com"],
     "builds":[
         {"src":"package.json","use":"@now/next"}
     ]

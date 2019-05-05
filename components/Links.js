@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Link = styled.a`
-    color: red
+    color: #A282E0
 `
 
 const ContactLinks = () => (
