@@ -14,7 +14,7 @@ const Meta = () => (
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+    {/* <link rel="stylesheet" type="text/css" href="/static/nprogress.css" /> */}
     <title>Ozipi::</title>
   </Head>
 );
