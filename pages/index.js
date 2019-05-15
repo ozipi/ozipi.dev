@@ -24,12 +24,14 @@ class Index extends React.Component {
 
 	render() {
 		return (
-      <CenterPage>
-      <div>
-        <h1>OZIPI</h1>
-      </div>
-      <ContactLinks/>
-      </CenterPage>
+      <>
+        <CenterPage>
+        <div>
+          <h1>OZIPI</h1>
+        </div>
+        <ContactLinks/>
+        </CenterPage>
+      </>
 	);
   }
 }
